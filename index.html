@@ -1,0 +1,2073 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts (Google font API) -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- Material Design for Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">
+  <!-- script de datos cogidos del JSON -->
+  <script src="src/app.js"></script>
+
+  <title>Biptions</title>
+  <link rel="icon" href="src/assets/favicon.ico">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<!--Particles-js-->
+<div id="particles-js"></div>
+
+<body data-spy="scroll" data-target="#nbvr" data-offset="0">
+  <!--Navbar-->
+  <nav id="nbvr" class="navbar navbar-expand-lg navbar-light fixed-top" data-toggle="collapse"
+    data-target=".navbar-collapse.show">
+    <a class="navbar-brand" href="#Home"> <img id="logo" src="src/assets/Icon_Biptions.png" alt="logo" width="100">
+    </a>
+    <button class="navbar-toggler radius" type="button" data-toggle="collapse" data-target="#navbarLinks"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span type="button" class="btn btn-primary bmd-btn-icon pt-3dorado"> &#8757; </span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item text-right" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <a class="nav-link" href="#Steps"><strong class="bold">Trazabilidad</strong></a>
+        </li>
+        <li class="nav-item text-right" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <a class="nav-link" href="#Contact"><strong class="bold">Puntúa</strong></a>
+        </li>
+        <li class="nav-item text-right" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <a class="nav-link" href="#People"><strong class="bold">Participantes</strong></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--##########################################################################################-->
+
+  <!--Cookies Consent-->
+  <div class="row">
+    <div class="col-lg-4 col-sm-12 button-fixed Cookies">
+      <div class="p-3 bg1-custom text-white alert alert-dismissible fade show">
+        <div class="row">
+          <div class="col-sm-10">
+            <h5>Política de Cookies</h5>
+          </div>
+        </div>
+        <p class="space"> <small>Nuestra política de cookies no es agresiva. La información obtenida es totalmente anónima, y en ningún
+          caso puede
+          ser asociada a un Usuario concreto e identificado. Más información en <nobr> " <a href="#People" data-target="#Legal"
+            data-toggle="modal" class="dorado">Aviso-Legal</a> " </nobr>  en el apartado de Política de Cookies.
+        </small> </p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!--##########################################################################################-->
+
+  <!--First slide (Home)-->
+  <main class="full" id="Home">
+    <div class="container-fluid">
+      <div class="row half-full justify-content-start align-items-center">
+        <h1 class="col-8 text-center" id="nLote">Biptions<span class="typing">&nbsp;</span></h1>
+      </div>
+      <!-- <div class="row half-full justify-content-end">
+        <div class="stamp col-5 align-self-center">
+          <img class="backgroundandradius" src="src/assets/Guaranteed.svg" width="70%" alt="Sello de garantía">
+        </div>
+      </div> -->
+    </div>
+  </main>
+  <!--##########################################################################################-->
+<!-- User Login                                 Reparar id sin que se vuelva transparente el fondo -->
+<section class="full" id="Contact">
+  <div class="container-fluid Contact">
+    <div class="container col-md-10 mb-5 mx-auto mt-0 mx-2 px-3 py-4 bg2-custom">
+      <div id="ContactChange"></div>
+      <div class="row justify-content-center mb-0">
+        <div class="mx-auto">
+          <h1 data-aos="zoom-in-up">Login</h1>
+        </div>
+      </div>
+      <form id="contact-form" method="post" role="form" enctype="text/plain">
+        <div class="messages"></div>
+
+        <!-- Name -->
+        <div class="controls">
+          <div class="row justify-content-center aos-repair">
+            <div class="col-sm-8" data-aos="fade-down-left">
+              <div id="form-name-div" class="form-group">
+                <label for="form-name" class="bmd-label-floating col-sm-6 label-form">Alias</label>
+                <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                  data-error="Say your name.">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- btcAddress -->
+        <div class="controls">
+          <div class="row justify-content-center aos-repair">
+            <div class="col-sm-8" data-aos="fade-down-left">
+              <div id="form-btc-div" class="form-group">
+                <label for="form-btc" class="bmd-label-floating col-sm-6 label-form">BTC Address</label>
+                <input id="form-btc" type="text" name="BTC" class="form-control form-control-lg" required="required"
+                  data-error="Add your BTC address.">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Relay -->
+        <div class="controls">
+          <div class="row justify-content-center aos-repair">
+            <div class="col-sm-8" data-aos="fade-down-left">
+              <div id="form-relay-div" class="form-group">
+                <label for="form-relay" class="bmd-label-floating col-sm-8 label-form">CryptoRelay URL</label>
+                <input id="form-relay" type="text" name="Relay" class="form-control form-control-lg" required="required"
+                  data-error="You need a CryptoRelay.">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ID or password -->
+        <div class="controls">
+          <div class="row justify-content-center aos-repair">
+            <div class="col-sm-8" data-aos="fade-down-left">
+              <div id="form-password-div" class="form-group password">
+                <label for="form-password" class="bmd-label-floating col-sm-6 label-form">Password</label>
+                <input id="form-password" type="text" name="Password" class="form-control form-control-lg" required="required"
+                  data-error="Add a valid password.">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Token -->
+        <div class="controls">
+          <div class="row justify-content-center aos-repair">
+            <div class="col-sm-8" data-aos="fade-down-left">
+              <div id="form-token-div" class="form-group token">
+                <label for="form-token" class="bmd-label-floating col-sm-6 label-form">Token</label>
+                <input id="form-token" type="text" name="Token" class="form-control form-control-lg" required="required"
+                  data-error="Choose a valid token.">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!-- Modal -->
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
+          Launch demo modal
+        </button> -->
+
+        <!-- Modal -->
+        <!-- <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+        <div class="row justify-content-center aos-repair">
+          <div id="SendButtonDiv" class="mx-auto button-send" data-aos="flip-down">
+            <input id="SendButton" type="submit" class="btn btn-primary disabled" tabindex="0" value="Enviar">
+          </div>
+        </div>
+        <!-- Upload file -->
+        <!-- <div class="row justify-content-center aos-repair">
+          <div id="SendButtonDiv" class="mx-auto button-send" data-aos="flip-down">
+            <form class="md-form">
+              <div class="file-field">
+                <div class="btn btn-primary btn-sm float-left">
+                  <span>Choose file</span>
+                  <input type="file">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" placeholder="Upload your file">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div> -->
+      </form>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!--##########################################################################################-->
+  <!--Second slide(Steps)-->
+
+  <div class="centerall" id="Steps">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 aos-repair">
+          <div class="main-timeline">
+
+            
+          <!-- General -->
+            <!-- Tab_1 Traders. Wallet: BTC-->
+            <div class="mt-5 pt-5 timeline" data-aos="fade-right">
+              <div class="timeline-content text-center">
+                <h3 class="title text-center">Trade<br>1,0234 BTC => 0 lock</h3>
+                <img class="img-fluid center-img" src="src/assets/Icon1_Trade.svg" alt="Origen"
+                  width="150">
+                <p>Join to <span id="nValeTotal">31</span><br> traders in our community </p>
+                <br>
+                <div class="accordionOrigen">
+                  <div class="card">
+
+                    <!-- Card_1.1 To Protect (Alice = Local)-->
+                                                                                                            <!-- BTCaddressTrader1 -->
+                                                                                                            <!-- Conditions/Respuestas: Del trader2 al trader1 -->
+                                                                                                              <!-- CALL/PUT -->
+                                                                                                              <!-- Strike (10% quantity en 10 tramos) -->
+                <div id="accordionEnvasado">
+                  <div class="card">
+                    <div class="card-header" id="headerEnvasado">
+                      <div class="arrow">
+                      <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEnvasado" aria-expanded="false" aria-controls="collapseEnvasado">
+                        <h6 class="accordion-header-txt"> To Protect: <span id="porcentajeTotalOrigenProvincia">15</span>
+                          users need covers</h6>
+                      </a>
+                    </div>
+                    </div>
+                    <div id="collapseEnvasado" class="collapse" data-parent="#accordionEnvasado" aria-labelledby="headerEnvasado">
+                      <div class="card-body">
+                        <ul>
+                          <!-- Description -->
+                          <p>
+                            Join as trader to protect your money with options and win awards.
+                          </p>
+                        </ul>
+                        <!-- <ul>
+                          
+                          <select class="browser-default custom-select">
+                            <option value="1">BTC/USD price</option>
+                            <option value="2">Futurues prices</option>
+                            <option value="3">Dev</option>
+                          </select>
+                        </ul>
+                        <ul> -->
+                          <!-- Description table -->
+                          <small>
+                            Table of Comments
+                          </small>
+                        </ul>
+                        <ul>
+                          <!-- <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> -->
+                            <table id="dtDynamicVerticalScrollExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck1" Checked>
+                                      <label class="custom-control-label" for="tableDefaultCheck1"></label>
+                                    </div>
+                                  </th>
+                                  <th class="th-sm">Date</th>
+                                  <th class="th-sm">Quantity</th>
+                                  <th class="th-sm">Strike</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                                      <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                                    </div>
+                                  </th>
+                                  <td>04/12/20</td>
+                                  <td>0,01</td>
+                                  <td>$1.500</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck3" >
+                                      <label class="custom-control-label" for="tableDefaultCheck3"></label>
+                                    </div>
+                                  </th>
+                                  <td>20/11/20</td>
+                                  <td>1</td>
+                                  <td>$1.50</td>
+                                 </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4" >
+                                      <label class="custom-control-label" for="tableDefaultCheck4"></label>
+                                    </div>
+                                  </th>
+                                  <td>13/11/20</td>
+                                  <td>0,2</td>
+                                  <td>$1.50</td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                        </ul>
+                        <ul>
+                          <!-- Price: BTC-USD -->
+
+                            <form id="contact-form" method="post" role="form" enctype="text/plain">
+                              <div class="messages"></div>
+                              <small>Publish a BUY option</small>
+
+                              <small>Type</small>
+                              <select class="browser-default custom-select">
+                                <option selected>CALL</option>
+                                <option value="1">PUT</option>
+                              </select>
+                
+                              
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Strike</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Quantity</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Prime</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <small>Duration</small>
+                              <select class="browser-default custom-select">
+                                <option selected>1 week</option>
+                                <option value="1">2 week</option>
+                                <option value="2">3 week</option>
+                                <option value="3">4 week</option>
+                                <option value="4">5 week</option>
+                              </select>
+                  
+                              <div class="clearfix"></div>
+                      
+                              <br>
+                              <div class="row justify-content-center aos-repair">
+                                <div id="SendButtonDiv" class="mx-auto button-send" data-aos="flip-down">
+                                  <input id="SendButton" type="submit" class="btn btn-primary disabled" tabindex="0" value="Submit">
+                                </div>
+                              </div>
+                            </form>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Offers -->
+
+                <div id="accordionEnvasado2">
+                  <div class="card">
+                    <div class="card-header" id="headerEnvasado2">
+                      <div class="arrow">
+                      <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEnvasado2" aria-expanded="false" aria-controls="collapseEnvasado2">
+                        <h6 class="accordion-header-txt"> Offers: High Risk, secure award</h6>
+                      </a>
+                    </div>
+                    </div>
+                    <div id="collapseEnvasado2" class="collapse" data-parent="#accordionEnvasado2" aria-labelledby="headerEnvasado2">
+                      <div class="card-body">
+                        <ul>
+                          <!-- Description -->
+                          <p>
+                            Join as trader to protect your money with options and win awards.
+                          </p>
+                        </ul>
+                        <!-- <ul>
+                          
+                          <select class="browser-default custom-select">
+                            <option value="1">BTC/USD price</option>
+                            <option value="2">Futurues prices</option>
+                            <option value="3">Dev</option>
+                          </select>
+                        </ul>
+                        <ul> -->
+                          <!-- Description table -->
+                          <small>
+                            Table of Comments
+                          </small>
+                        </ul>
+                        <ul>
+                          <!-- <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> -->
+                            <table id="dtDynamicVerticalScrollExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck1" Checked>
+                                      <label class="custom-control-label" for="tableDefaultCheck1"></label>
+                                    </div>
+                                  </th>
+                                  <th class="th-sm">Date</th>
+                                  <th class="th-sm">Quantity</th>
+                                  <th class="th-sm">Strike</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                                      <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                                    </div>
+                                  </th>
+                                  <td>04/12/20</td>
+                                  <td>0,01</td>
+                                  <td>$1.500</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck3" >
+                                      <label class="custom-control-label" for="tableDefaultCheck3"></label>
+                                    </div>
+                                  </th>
+                                  <td>20/11/20</td>
+                                  <td>1</td>
+                                  <td>$1.50</td>
+                                 </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4" >
+                                      <label class="custom-control-label" for="tableDefaultCheck4"></label>
+                                    </div>
+                                  </th>
+                                  <td>13/11/20</td>
+                                  <td>0,2</td>
+                                  <td>$1.50</td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                        </ul>
+                        <ul>
+                          <!-- Price: BTC-USD -->
+
+                            <form id="contact-form" method="post" role="form" enctype="text/plain">
+                              <div class="messages"></div>
+                              <small>Publish a BUY option</small>
+
+                              <small>Type</small>
+                              <select class="browser-default custom-select">
+                                <option selected>CALL</option>
+                                <option value="1">PUT</option>
+                              </select>
+                
+                              
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Strike</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Quantity</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Prime</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <small>Duration</small>
+                              <select class="browser-default custom-select">
+                                <option selected>1 week</option>
+                                <option value="1">2 week</option>
+                                <option value="2">3 week</option>
+                                <option value="3">4 week</option>
+                                <option value="4">5 week</option>
+                              </select>
+                  
+                              <div class="clearfix"></div>
+                      
+                              <br>
+                              <div class="row justify-content-center aos-repair">
+                                <div id="SendButtonDiv" class="mx-auto button-send" data-aos="flip-down">
+                                  <input id="SendButton" type="submit" class="btn btn-primary disabled" tabindex="0" value="Submit">
+                                </div>
+                              </div>
+                            </form>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+                
+                  </div>
+                </div>
+
+              <!-- COMBINATIONS -->
+                <div id="accordionEnvasado3">
+                  <div class="card">
+                    <div class="card-header" id="headerEnvasado3">
+                      <div class="arrow">
+                      <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEnvasado3" aria-expanded="false" aria-controls="collapseEnvasado">
+                        <h6 class="accordion-header-txt"> COMBINATIONS: SHARE EXPENSES</h6>
+                      </a>
+                    </div>
+                    </div>
+                    <div id="collapseEnvasado3" class="collapse" data-parent="#accordionEnvasado3" aria-labelledby="headerEnvasado3">
+                      <div class="card-body">
+                        <ul>
+                          <!-- Description -->
+                          <p>
+                            Join as trader to protect your money with options and win awards.
+                          </p>
+                        </ul>
+                        <!-- <ul>
+                          
+                          <select class="browser-default custom-select">
+                            <option value="1">BTC/USD price</option>
+                            <option value="2">Futurues prices</option>
+                            <option value="3">Dev</option>
+                          </select>
+                        </ul>
+                        <ul> -->
+                          <!-- Description table -->
+                          
+                        <ul>
+                          <!-- Price: BTC-USD -->
+
+                            <form id="contact-form" method="post" role="form" enctype="text/plain">
+                              <div class="messages"></div>
+                              <small>Publish a option</small>
+
+                              <small>Type</small>
+                              <select class="browser-default custom-select">
+                                <option selected>BUY CALL</option>
+                                <option value="1">SELL CALL</option>
+                                <option value="2">BUY PUT</option>
+                                <option value="3">SELLPUT</option>
+                              </select>
+                
+                              
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Strike</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Quantity</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Prime</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <small>Duration</small>
+                              <select class="browser-default custom-select">
+                                <option selected>1 week</option>
+                                <option value="1">2 week</option>
+                                <option value="2">3 week</option>
+                                <option value="3">4 week</option>
+                                <option value="4">5 week</option>
+                              </select>
+                  
+                              <div class="clearfix"></div>
+                      
+                              <br>
+                            </form>
+                        </ul>
+                        <br>
+                        <ul>
+                          <!-- Price: BTC-USD -->
+
+                            <form id="contact-form" method="post" role="form" enctype="text/plain">
+                              <div class="messages"></div>
+                              <small>Publish a option</small>
+
+                              <small>Type</small>
+                              <select class="browser-default custom-select">
+                                <option selected>BUY CALL</option>
+                                <option value="1">SELL CALL</option>
+                                <option value="2">BUY PUT</option>
+                                <option value="3">SELLPUT</option>
+                              </select>
+                
+                              
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Strike</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Quantity</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Prime</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <small>Duration</small>
+                              <select class="browser-default custom-select">
+                                <option selected>1 week</option>
+                                <option value="1">2 week</option>
+                                <option value="2">3 week</option>
+                                <option value="3">4 week</option>
+                                <option value="4">5 week</option>
+                              </select>
+                  
+                              <div class="clearfix"></div>
+                      
+                              <br>
+                            </form>
+                        </ul>
+                        <br>
+                        <ul>
+                          <!-- Price: BTC-USD -->
+
+                            <form id="contact-form" method="post" role="form" enctype="text/plain">
+                              <div class="messages"></div>
+                              <small>Publish a option</small>
+
+                              <small>Type</small>
+                              <select class="browser-default custom-select">
+                                <option selected>BUY CALL</option>
+                                <option value="1">SELL CALL</option>
+                                <option value="2">BUY PUT</option>
+                                <option value="3">SELLPUT</option>
+                              </select>
+                
+                              
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Strike</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Quantity</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Prime</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <small>Duration</small>
+                              <select class="browser-default custom-select">
+                                <option selected>1 week</option>
+                                <option value="1">2 week</option>
+                                <option value="2">3 week</option>
+                                <option value="3">4 week</option>
+                                <option value="4">5 week</option>
+                              </select>
+                  
+                              <div class="clearfix"></div>
+                      
+                              <br>
+
+                            </form>
+                            <ul>
+                              <!-- Price: BTC-USD -->
+    
+                                <form id="contact-form" method="post" role="form" enctype="text/plain">
+                                  <div class="messages"></div>
+                                  <small>Publish a BUY option</small>
+    
+                                  <small>Type</small>
+                                  <select class="browser-default custom-select">
+                                    <option selected>BUY CALL</option>
+                                    <option value="1">SELL CALL</option>
+                                    <option value="2">BUY PUT</option>
+                                    <option value="3">SELLPUT</option>
+                                  </select>
+                    
+                                  
+                                  <div class="controls">
+                                    <div class="row justify-content-center aos-repair">
+                                      <div class="col-sm-12" data-aos="fade-down-right">
+                                        <div id="form-name-div" class="form-group">
+                                          <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Strike</label>
+                                          <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                            data-error="Say your name.">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="controls">
+                                    <div class="row justify-content-center aos-repair">
+                                      <div class="col-sm-12" data-aos="fade-down-right">
+                                        <div id="form-name-div" class="form-group">
+                                          <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Quantity</label>
+                                          <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                            data-error="Say your name.">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="controls">
+                                    <div class="row justify-content-center aos-repair">
+                                      <div class="col-sm-12" data-aos="fade-down-right">
+                                        <div id="form-name-div" class="form-group">
+                                          <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Prime</label>
+                                          <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                            data-error="Say your name.">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <small>Duration</small>
+                                  <select class="browser-default custom-select">
+                                    <option selected>1 week</option>
+                                    <option value="1">2 week</option>
+                                    <option value="2">3 week</option>
+                                    <option value="3">4 week</option>
+                                    <option value="4">5 week</option>
+                                  </select>
+                      
+                                  <div class="clearfix"></div>
+                          
+                                  <br>
+                                  <div class="row justify-content-center aos-repair">
+                                    <div id="SendButtonDiv" class="mx-auto button-send" data-aos="flip-down">
+                                      <input id="SendButton" type="submit" class="btn btn-primary disabled" tabindex="0" value="Submit">
+                                    </div>
+                                  </div>
+                                </form>
+                            </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+
+                <!-- <small>Estos datos provienen de la<br><a id="cidOrigen"
+                    href="https://ipfs.io/ipfs/QmPEji1Jat9LLvWGM8SDsKQ9jERLLrHNmqWiRQJ3UR4jNU">
+                    Blockchain <i class="fas fa-search"></i></a></small> -->
+              </div>
+            </div>
+
+            <!-- Tab_2 Judge. Wallet: voteBTC-->
+              <!-- Card_2.1 Vote -->
+              <!-- slow ⇐ Time ⇒ fast -->
+              <!-- ⇐ Quatity ⇒  -->
+              <!-- ⇐ BTC-voteBTC ⇒  -->
+              <!-- ⇐ BTC-repuBTC ⇒  -->
+              <!-- ⇐ Dev_BTC ⇒  -->
+              <!-- ⇐ Dev_IPFS ⇒  -->
+              <!-- ⇐ Dev_API ⇒  -->
+            <!-- Procesado -->
+            <div class="timeline" data-aos="fade-left">
+              <div class="timeline-content text-center">
+                <h3 class="title text-center">JUDGE<br>150 voteBTC => 0 stake</h3>
+                <img class="img-fluid center-img" src="src/assets/Icon2_Judge.svg"
+                  alt="Procesado" width="150">
+                <p>Vote for the rules  </p>
+                <br>
+
+                <div id="accordionEnvasado4">
+                  <div class="card">
+                    <div class="card-header" id="headerEnvasado4">
+                      <div class="arrow">
+                      <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEnvasado4" aria-expanded="false" aria-controls="collapseEnvasado4">
+                        <h6 class="accordion-header-txt"> Vote for the Rules</h6>
+                      </a>
+                    </div>
+                    </div>
+                    <div id="collapseEnvasado4" class="collapse" data-parent="#accordionEnvasado4" aria-labelledby="headerEnvasado">
+                      <div class="card-body">
+                        <ul>
+                          <!-- Description -->
+                          <p>
+                            Join as judge to allow contract options and win awards. Please choose topic
+                          </p>
+                        </ul>
+                        <ul>
+                          <!-- List -->
+                          <select class="browser-default custom-select">
+                            <option value="1">Fast Time</option>
+                            <option value="2">Ratio Protection</option>
+                            <option value="3">Dev</option>
+                          </select>
+                        </ul>
+                        <ul>
+                          <!-- Description table -->
+                          <small>
+                            Table of Comments
+                          </small>
+                        </ul>
+                        <ul>
+                          
+                        </ul>
+                        <ul>
+                          <!-- Price: BTC-USD -->
+
+                            <form id="contact-form" method="post" role="form" enctype="text/plain">
+                              <div class="messages"></div>
+                
+                              
+                              <small>Add voteBTC</small>
+                              <select class="browser-default custom-select">
+                                <option selected>0</option>
+                                <option value="1">x1,25</option>
+                                <option value="2">x2,5</option>
+                                <option value="3">x4</option>
+                                <option value="4">x10</option>
+                              </select>
+                  
+                              <div class="clearfix"></div>
+                      
+                              <br>
+                              <div class="row justify-content-center aos-repair">
+                                <div id="SendButtonDiv" class="mx-auto button-send" data-aos="flip-down">
+                                  <input id="SendButton" type="submit" class="btn btn-primary disabled" tabindex="0" value="Submit">
+                                </div>
+                              </div>
+                            </form>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+
+
+                <div id="accordionEnvasado5">
+                  <div class="card">
+                    <div class="card-header" id="headerEnvasado5">
+                      <div class="arrow">
+                      <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEnvasado5" aria-expanded="false" aria-controls="collapseEnvasado5">
+                        <h6 class="accordion-header-txt"> MAtch</h6>
+                      </a>
+                    </div>
+                    </div>
+                    <div id="collapseEnvasado5" class="collapse" data-parent="#accordionEnvasado5" aria-labelledby="headerEnvasado5">
+                      <div class="card-body">
+                        <ul>
+                          <!-- Description -->
+                          <p>
+                            Join as judge to allow contract options and win awards. Please choose topic
+                          </p>
+                        </ul>
+                        <ul>
+                          <!-- List -->
+                          <small>Select topic</small>
+                          <select class="browser-default custom-select">
+                            <option value="1">Combinations (Liquidity Pool)</option>
+                            <option value="2">Open</option>
+                            <option value="3">Close</option>
+                          </select>
+                        </ul>
+                        <ul>
+                          <!-- Description table -->
+                          <small>
+                            Table of Comments
+                          </small>
+                        </ul>
+                        <ul>
+                          <!-- <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> -->
+                            <table id="dtDynamicVerticalScrollExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck1" Checked>
+                                      <label class="custom-control-label" for="tableDefaultCheck1"></label>
+                                    </div>
+                                  </th>
+                                  <th class="th-sm">Date</th>
+                                  <th class="th-sm">nº options</th>
+                                  <th class="th-sm">nº oracles </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                                      <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                                    </div>
+                                  </th>
+                                  <td>27/11/20</td>
+                                  <td>4</td>
+                                  <td>-100</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck3" >
+                                      <label class="custom-control-label" for="tableDefaultCheck3"></label>
+                                    </div>
+                                  </th>
+                                  <td>20/11/20</td>
+                                  <td>3</td>
+                                  <td>-25</td>
+                                 </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4" >
+                                      <label class="custom-control-label" for="tableDefaultCheck4"></label>
+                                    </div>
+                                  </th>
+                                  <td>13/11/20</td>
+                                  <td>12</td>
+                                  <td>+35</td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                        </ul>
+                        <ul>
+                          <!-- Price: BTC-USD -->
+
+                            <form id="contact-form" method="post" role="form" enctype="text/plain">
+                              <div class="messages"></div>
+                
+                              
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Option A</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Option B</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Option C</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Option D</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <small>Add repuBTC</small>
+                              <select class="browser-default custom-select">
+                                <option selected>0</option>
+                                <option value="1">x1,25</option>
+                                <option value="2">x2,5</option>
+                                <option value="3">x4</option>
+                                <option value="4">x10</option>
+                              </select>
+                  
+                              <div class="clearfix"></div>
+                      
+                              <br>
+                              <div class="row justify-content-center aos-repair">
+                                <div id="SendButtonDiv" class="mx-auto button-send" data-aos="flip-down">
+                                  <input id="SendButton" type="submit" class="btn btn-primary disabled" tabindex="0" value="Submit">
+                                </div>
+                              </div>
+                            </form>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <small>Estos datos provienen de la<br><a id="cidProcesado"
+                    href="https://ipfs.io/ipfs/QmZ1jZkgqVqzKiSHSpbSKfTx2HBaYVyEAr9GBuxu28t5DT">
+                    Blockchain <i class="fas fa-search"></i></a></small> -->
+
+              </div>
+            </div>
+
+            <!-- Tab_3 Oracle. Wallet: repuBTC-->
+            <!-- Card_2.1 USD-BTC -->
+                                                                                                      <!-- Date -->
+                                                                                                      <!-- Hour -->
+                                                                                                      <!-- ADD REPU 	(btn) -->
+            <div class="timeline" data-aos="fade-right">
+              <div class="timeline-content text-center">
+                <h3 class="text-center title">ORACLE: 13.250 repuBTC => 0 spent</h3>
+                <img class="img-fluid center-img" src="src/assets/Icon3_Oracle.svg" alt="Envasado"
+                  width="150">
+
+                <p>Join to <span id="nOracles">31</span><br> oracles to give the correct price </p>
+
+                <br>
+
+                <div id="accordionEnvasado6">
+                  <div class="card">
+                    <div class="card-header" id="headerEnvasado6">
+                      <div class="arrow">
+                      <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEnvasado6" aria-expanded="false" aria-controls="collapseEnvasado6">
+                        <h6 class="accordion-header-txt"> Actual Price is <span id="actualpriceBTC">$15.000</span> for BTC with <span
+                            id="udLoteTotalFecha">480</span> proposals</h6>
+                      </a>
+                    </div>
+                    </div>
+                    <div id="collapseEnvasado6" class="collapse" data-parent="#accordionEnvasado6" aria-labelledby="headerEnvasado6">
+                      <div class="card-body">
+                        <ul>
+                          <!-- Description -->
+                          <p>
+                            Join as oracle to allow contract options and win awards. Please choose topic
+                          </p>
+                        </ul>
+                        <ul>
+                          <!-- List -->
+                          <select class="browser-default custom-select">
+                            <option value="1">BTC/USD price</option>
+                            <option value="2">Futurues prices</option>
+                            <option value="3">Dev</option>
+                          </select>
+                        </ul>
+                        <ul>
+                          <!-- Description table -->
+                          <small>
+                            Table of Comments
+                          </small>
+                        </ul>
+                        <ul>
+                          <!-- <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> -->
+                            <table id="dtDynamicVerticalScrollExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck1" Checked>
+                                      <label class="custom-control-label" for="tableDefaultCheck1"></label>
+                                    </div>
+                                  </th>
+                                  <th class="th-sm">Date</th>
+                                  <th class="th-sm">nº options</th>
+                                  <th class="th-sm">nº oracles </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                                      <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                                    </div>
+                                  </th>
+                                  <td>27/11/20</td>
+                                  <td>4</td>
+                                  <td>-100</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck3" >
+                                      <label class="custom-control-label" for="tableDefaultCheck3"></label>
+                                    </div>
+                                  </th>
+                                  <td>20/11/20</td>
+                                  <td>3</td>
+                                  <td>-25</td>
+                                 </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <!-- Default unchecked -->
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4" >
+                                      <label class="custom-control-label" for="tableDefaultCheck4"></label>
+                                    </div>
+                                  </th>
+                                  <td>13/11/20</td>
+                                  <td>12</td>
+                                  <td>+35</td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                        </ul>
+                        <ul>
+                          <!-- Price: BTC-USD -->
+
+                            <form id="contact-form" method="post" role="form" enctype="text/plain">
+                              <div class="messages"></div>
+                
+                              
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Price: USD/BTC</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">Date</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="controls">
+                                <div class="row justify-content-center aos-repair">
+                                  <div class="col-sm-12" data-aos="fade-down-right">
+                                    <div id="form-name-div" class="form-group">
+                                      <label for="form-name" class="bmd-label-floating col-sm-8 label-form">URL</label>
+                                      <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                                        data-error="Say your name.">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <small>Add repuBTC</small>
+                              <select class="browser-default custom-select">
+                                <option selected>0</option>
+                                <option value="1">x1,25</option>
+                                <option value="2">x2,5</option>
+                                <option value="3">x4</option>
+                                <option value="4">x10</option>
+                              </select>
+                  
+                              <div class="clearfix"></div>
+                      
+                              <br>
+                              <div class="row justify-content-center aos-repair">
+                                <div id="SendButtonDiv" class="mx-auto button-send" data-aos="flip-down">
+                                  <input id="SendButton" type="submit" class="btn btn-primary disabled" tabindex="0" value="Submit">
+                                </div>
+                              </div>
+                            </form>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+
+                <!-- <small>Estos datos provienen de la<br><a id="cidEnvasado"
+                    href="https://ipfs.io/ipfs/QmWfTVJsYNNzJEU2PnqzcU7MwtU7YKzNE8jsXboTKSdKyh">
+                    Blockchain <i class="fas fa-search"></i></a></small> -->
+
+                <br>
+              </div>
+            </div>
+
+            <!-- Puntuación -->
+            <!-- <div class="timeline mb-5 pb-5" data-aos="fade-left">
+              <div class="timeline-content text-center">
+                <h3 class="title text-center">Valoraciones</h3>
+                <img class="img-fluid center-img" src="src/assets/dTeilorg_Explorador_Iconos_podium.svg"
+                  alt="Valoraciones" width="250">
+                <br>
+                <div>
+                  <p class="bold">Puntuación del público :</p>
+                </div>
+                <div>
+                  <span id="1star" class="fa fa-star checked"></span>
+                  <span id="2star" class="fa fa-star checked"></span>
+                  <span id="3star" class="fa fa-star checked"></span>
+                  <span id="4star" class="fa fa-star checked"></span>
+                  <span id="5star" class="fa fa-star checked"></span>
+                </div>
+                <div>
+                  <p>
+                    Han votado
+                    <span id="numeroVotantes">2</span>
+                    personas
+                  </p>
+                </div>
+
+                <br>
+                <p id="premios"><span class="bold">Premios conseguidos:</span></p>
+                <p id="premio1">DIPLOMA XII Concurso Provincial Aceite de Oliva Virgen Extra 2019, «Finalista en la
+                  categoría de Frutado Verde».</p>
+                <img id="imgDO" class="img-fluid center-img" src="src/assets/DO.png" alt="D.O." width="250">
+
+                <small>Estos datos provienen de la<br><a id="cidValoraciones" href="https://ipfs.io/ipfs/"> Blockchain <i class="fas fa-search"></i></a></small>
+
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--##########################################################################################-->
+
+
+
+
+
+  <!--Third slide(Contact)-->
+  <div class="full centerall" id="Contact">
+      <div class="container col-sm-10 mt-5 mx-2 px-3 py-4 bg2-custom">
+        <div id="ContactChange"></div>
+        <div class="row justify-content-center mb-0">
+          <div class="mx-auto aos-repair">
+            <h1 data-aos="zoom-in-up">Leave us a comment</h1>
+          </div>
+        </div>
+        <form id="contact-form" onsubmit="return false" method="post" role="form" enctype="text/plain">
+          <div class="messages"></div>
+
+          <div class="controls">
+            <div class="row justify-content-center aos-repair">
+              <div class="col-sm-4" data-aos="fade-down-left">
+                <div class="form-group">
+                  <label for="form_email" class="bmd-label-floating col-sm-6 label-form">Email</label>
+                  <input id="form_email" type="email" name="Email" class="form-control form-control-lg"
+                    required="required" data-error="Necesitamos un Email válido">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="row justify-content-center aos-repair">
+            <div class="col-sm-4 my-3" data-aos="fade-up">
+              <div class="form-group">
+                <label for="form_message" class="bmd-label-floating col-sm-12 label-form">Comment</label>
+                <textarea id="form_message" class="form-control form-control-lg" name="Message" rows="1"
+                  data-error="Escribe tu mensaje."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="row justify-content-center aos-repair">
+            <div class="col-sm-6" data-aos="fade-up">
+              <h6 class="text-center my-3">Vote for this Dapp<h6>
+                  <div class="form-group">
+                    <div class="rating starRating-stars">
+                      <input class="starRating-input" type="radio" name="rating" value="1" id="rating-1" checked />
+                      <label class="starRating-label" for="rating-1" aria-label="One"></label>
+                      <input class="starRating-input" type="radio" name="rating" value="2" id="rating-2" checked />
+                      <label class="starRating-label" for="rating-2" aria-label="Two"></label>
+                      <input class="starRating-input" type="radio" name="rating" value="3" id="rating-3" checked />
+                      <label class="starRating-label" for="rating-3" aria-label="Three"></label>
+                      <input class="starRating-input" type="radio" name="rating" value="4" id="rating-4" checked />
+                      <label class="starRating-label" for="rating-4" aria-label="Four"></label>
+                      <input class="starRating-input" type="radio" name="rating" value="5" id="rating-5" checked />
+                      <label class="starRating-label" for="rating-5" aria-label="Five"></label>
+                      <div class="starRating-focus"></div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="row justify-content-center aos-repair">
+            <div class="mx-auto button-send" data-aos="flip-down">
+              <input type="submit" class="btn btn-success btn-send disabled bold" tabindex="0" value="Enviar"
+                id="sendValoracion">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+  <!--##########################################################################################-->
+</body>
+
+<!--Footer, it has the section of the navbar "people" in it-->
+<footer class="full centerall" id="People">
+  <div class="container-fluid aos-repair">
+    <div class="row my-5">
+      <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-right">
+        <div class="img-shadow cont-overlay">
+          <img src="src/assets/CEO.png" class="photo img-fluid" alt="CEO" width="150">
+        </div>
+        <div class="overlay">
+          <div class="text">Víctor Gil Cifuentes</div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-up">
+        <div class="img-shadow cont-overlay">
+          <img src="src/assets/CLO.png" class="photo img-fluid" alt="CLO" width="150">
+        </div>
+        <div class="overlay">
+          <div class="text">Cruz Guijarro</div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-in-up">
+        <div class="img-shadow cont-overlay">
+          <img src="src/assets/CPO.png" class="photo img-fluid" alt="CPO" width="150">
+        </div>
+        <div class="overlay">
+          <div class="text">Daniel Nava</div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-left">
+        <div class="img-shadow cont-overlay">
+          <img src="src/assets/COO.png" class="photo img-fluid" alt="COO" width="150">
+        </div>
+        <div class="overlay">
+          <div class="text">Joaquín Rus Pezzi</div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-left">
+        <div class="img-shadow cont-overlay">
+          <img src="src/assets/Aitor.jpg" class="photo img-fluid" alt="Advisor" width="150">
+        </div>
+        <div class="overlay">
+          <div class="text">Aitor Ibañez</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer container-fluid">
+    <div id="button">
+      <img src="src/assets/Icon_Biptions.png" width="75em" alt="icon">
+    </div>
+    <div id="container">
+      <div id="cont">
+        <div class="footer_center">
+          <a data-target="#Legal" data-toggle="modal">
+            <h3>Aviso-Legal</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--##########################################################################################-->
+
+<!--Modal Aviso legal-->
+<div class="modal fade" id="Legal" tabindex="-1" role="dialog" aria-labelledby="Legal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="Legal_Title">Aviso-Legal (<a href="mailto:legal@dteil.org">legal@biptions.com</a>):
+        </h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4>Identificación y Titularidad</h4>
+        <br>
+        <p>En cumplimiento del artículo 10 de la Ley 34 / 2002,
+          de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico,
+          el Titular expone sus datos identificativos.
+        </p>
+        <ul>
+          <li>
+            <h6>Correo electrónico:</h6> <a href="mailto:legal@biptions.com">legal@dteil.org</a>
+          </li>
+          <li>
+            <h6>Sitio Web:</h6> <a href="https://www.biptions.com">https://www.biptions.com</a>
+          </li>
+        </ul>
+        <br>
+        <h4>Finalidad</h4>
+        <p>La finalidad del sitio Web <a href="https://www.biptions.com">https://www.biptions.com</a> es informar.</p>
+        <h4>Condiciones de Uso</h4>
+        <br>
+        <p>La utilización del sitio Web le otorga la condición de Usuario, e implica la aceptación
+          completa de todas las cláusulas y condiciones de uso incluidas en las páginas:
+        </p>
+        <ul>
+          <li>Aviso Legal</li>
+          <li>Política de Privacidad</li>
+          <li>Política de Cookies</li>
+        </ul>
+        <p>
+          Si no estuviera conforme con todas y cada una de estas cláusulas y condiciones absténgase
+          de utilizar este sitio Web.
+          <br>
+          El acceso a este sitio Web no supone, en modo alguno, el inicio de una relación
+          comercial con el Titular.
+          <br>
+          A través de este sitio Web, el Titular le facilita el acceso y la utilización de
+          diversos contenidos que el Titular o sus colaboradores han publicadon por medio de Internet.
+          <br>
+          A tal efecto, usted está obligado y comprometido a NO utilizar cualquiera
+          de los contenidos del sitio Web con fines o efectos ilícitos, prohibidos en este Aviso
+          Legal o por la legislación vigente, lesivos de los derechos e intereses de terceros,
+          o que de cualquier forma puedan dañar, inutilizar, sobrecargar, deteriorar o impedir la
+          normal utilización de los contenidos, los equipos informáticos o los documentos, archivos y
+          toda clase de contenidos almacenados en cualquier equipo informático propios o contratados
+          por el Titular, de otros usuarios o de cualquier usuario de Internet.
+        </p>
+        <br>
+        <h4>Medidas de seguridad</h4>
+        <br>
+        <p>
+          Los datos personales que facilite al Titular pueden ser almacenados en bases
+          de datos automatizadas o no, cuya titularidad corresponde en exclusiva a el Titular,
+          que asume todas las medidas de índole técnica, organizativa y de seguridad que garantizan
+          la confidencialidad, integridad y calidad de la información contenida en las mismas de
+          acuerdo con lo establecido en la normativa vigente en protección de datos.
+          <br>
+          No obstante, debe ser consciente de que las medidas de seguridad de los sistemas
+          informáticos en Internet no son enteramente fiables y que, por tanto el Titular no
+          puede garantizar la inexistencia de virus u otros elementos que puedan producir alteraciones
+          en los sistemas informáticos (software y hardware) del Usuario o en sus documentos electrónicos
+          y ficheros contenidos en los mismos aunque el Titular pone todos los medios necesarios y toma las
+          medidas de seguridad oportunas para evitar la presencia de estos elementos dañinos.
+        </p>
+        <br>
+        <h4>Datos personales</h4>
+        <br>
+        <p>
+          Usted puede consultar toda la información relativa al tratamiento de datos personales
+          que recoge el Titular en la página de la Política de Privacidad.
+        </p>
+        <br>
+        <h4>Contenidos</h4>
+        <br>
+        <p>
+          El Titular ha obtenido la información, el contenido multimedia y
+          los materiales incluidos en el sitio Web de fuentes que considera
+          fiables, pero, si bien ha tomado todas las medidas razonables para asegurar que la información
+          contenida es correcta, el Titular no garantiza que sea exacta, completa o actualizada. El Titular declina
+          expresamente cualquier responsabilidad por error u omisión en la información contenida en las páginas de este
+          sitio Web.
+          <br>
+          Queda prohibido transmitir o enviar a través del sitio Web cualquier contenido ilegal o ilícito,
+          virus informáticos, o mensajes que, en general, afecten o violen derechos de el Titular o de terceros.
+          <br>
+          Los contenidos del Sitio Web tienen únicamente una finalidad informativa y bajo ninguna circunstancia deben
+          usarse ni considerarse como oferta de venta, solicitud de una oferta de compra ni recomendación para realizar
+          cualquier otra operación, salvo que así se indique expresamente.
+          <br>
+          El Titular se reserva el derecho a modificar, suspender, cancelar o restringir el contenido del Sitio Web,
+          los vínculos o la información obtenida a través del sitio Web, sin necesidad de previo aviso.
+          <br>
+          El Titular no es responsable de los daños y perjuicios que pudieran derivarse de la utilización
+          de la información del sitio Web o de la contenida en las redes sociales del Titular.
+        </p>
+        <br>
+        <h4>Política de cookies</h4>
+        <br>
+        <p>
+          En la página Política de Cookies puede consultar toda la información relativa a la política de recogida y
+          tratamiento de las cookies.
+          <br>
+          El Titular sólo obtiene y conserva la siguiente información acerca de los visitantes del Sitio Web:
+          <ul>
+            <li>El nombre de dominio del proveedor (PSI) y/o dirección IP que les da acceso a la red.</li>
+            <li>La fecha y hora de acceso al sitio Web.</li>
+            <li>La dirección de Internet origen del enlace que dirige al sitio Web.</li>
+            <li>El número de visitantes diarios de cada sección.</li>
+            <li>La información obtenida es totalmente anónima, y en ningún caso puede ser asociada a un Usuario concreto
+              e identificado.</li>
+          </ul>
+        </p>
+        <br>
+        <h4>Enlaces de interés a otros sitios Web</h4>
+        <br>
+        <p>
+          El Titular puede proporcionarle acceso a sitios Web de terceros mediante enlaces con la finalidad de informar
+          sobre la existencia de otras
+          fuentes de información en Internet en las que podrá ampliar los datos ofrecidos en el sitio Web.
+          <br>
+          Estos enlaces a otros sitios Web no suponen en ningún caso una sugerencia o recomendación para que usted
+          visite las páginas web de destino,
+          que están fuera del control del Titular, por lo que Titular no es responsable del contenido de los sitios web
+          vinculados ni del resultado que
+          obtenga al seguir los enlaces.
+          <br>
+          Asimismo, el Titular no responde de los links o enlaces ubicados en los sitios web vinculados a los que le
+          proporciona acceso.
+          <br>
+          El establecimiento del enlace no implica en ningún caso la existencia de relaciones entre Titular y el
+          propietario del sitio en el que se establezca
+          el enlace, ni la aceptación o aprobación por parte del Titular de sus contenidos o servicios.
+          <br>
+          Si accede a un sitio Web externo desde un enlace que encuentre en el Sitio Web usted deberá leer la propia
+          política de privacidad del otro sitio web
+          que puede ser diferente de la de este sitio Web.
+        </p>
+        <br>
+        <h4>Propiedad intelectual e industrial</h4>
+        <br>
+        <p>
+          Todos los derechos están reservados.
+          <br>
+          Todo acceso a este sitio Web está sujeto a las siguientes condiciones: la reproducción, almacenaje permanente
+          y la difusión de los contenidos
+          o cualquier otro uso que tenga finalidad pública o comercial queda expresamente prohibida sin el
+          consentimiento previo expreso y por escrito de Titular.
+        </p>
+        <br>
+        <h4>Limitación de responsabilidad</h4>
+        <br>
+        <p>
+          La información y servicios incluidos o disponibles a través de este sitio Web pueden incluir incorrecciones o
+          errores tipográficos. De
+          forma periódica el Titular incorpora mejoras y/o cambios a la información contenida y/o los Servicios que
+          puede introducir en cualquier
+          momento.
+          <br>
+          El Titular no declara ni garantiza que los servicios o contenidos sean interrumpidos o que estén libres de
+          errores, que los defectos sean
+          corregidos, o que el servicio o el servidor que lo pone a disposición estén libres de virus u otros
+          componentes nocivos sin perjuicio de que el Titular
+          realiza todos los esfuerzos en evitar este tipo de incidentes.
+          <br>
+          Titular declina cualquier responsabilidad en caso de que existan interrupciones o un mal funcionamiento de los
+          Servicios o contenidos ofrecidos en Internet,
+          cualquiera que sea su causa. Asimismo, el Titular no se hace responsable por caídas de la red, pérdidas de
+          negocio a consecuencia de
+          dichas caídas, suspensiones temporales de fluido eléctrico o cualquier otro tipo de daño indirecto que te
+          pueda ser causado por causas
+          ajenas a el Titular.
+          <br>
+          Antes de tomar decisiones y/o acciones con base a la información incluida en el sitio Web, el Titular le
+          recomienda comprobar y contrastar
+          la información recibida con otras fuentes.
+        </p>
+        <br>
+        <h4>Jurisdicción</h4>
+        <br>
+        <p>
+          Este Aviso Legal se rige íntegramente por la legislación española.
+          <br>
+          Siempre que no haya una norma que obligue a otra cosa, para cuantas cuestiones se susciten sobre la
+          interpretación,
+          aplicación y cumplimiento de este Aviso Legal, así como de las reclamaciones que puedan derivarse de su uso,
+          las partes acuerdan
+          someterse a los Jueces y Tribunales de la provincia de Sevilla, con renuncia expresa de cualquier otra
+          jurisdicción que pudiera
+          corresponderles.
+        </p>
+        <h4>Contacto</h4>
+        <br>
+        En caso de que usted tenga cualquier duda acerca de estas Condiciones legales o quiera realizar cualquier
+        comentario sobre este sitio Web,
+        puede enviar un mensaje de correo electrónico a la dirección <a
+          href="mailto:legal@dteil.org">legal@dteil.org</a> .
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="modal fade" id="Legal" tabindex="-1" role="dialog" aria-labelledby="Legal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="Legal_Title">Aviso-Legal (<a href="mailto:legal@dteil.org">legal@dteil.org</a>):
+        </h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4>Identificación y Titularidad</h4>
+        <p>En cumplimiento del artículo 10 de la Ley 34 / 2002,
+          de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico,
+          el Titular expone sus datos identificativos.
+        </p>
+        <ul>
+          <li>
+            <h6>Correo electrónico:</h6> <a href="mailto:legal@dteil.org">legal@dteil.org</a>
+          </li>
+          <li>
+            <h6>Sitio Web:</h6> <a href="https://www.dteil.org">https://www.dteil.org</a>
+          </li>
+        </ul>
+        <hr>
+        <h4>Finalidad</h4>
+        <p>La finalidad del sitio Web <a href="https://dteil.org">https://dteil.org</a> es informar.</p>
+        <hr>
+        <h4>Condiciones de Uso</h4>
+        <p>La utilización del sitio Web le otorga la condición de Usuario, e implica la aceptación
+          completa de todas las cláusulas y condiciones de uso incluidas en las páginas:
+        </p>
+        <ul>
+          <li>Aviso Legal</li>
+          <li>Política de Privacidad</li>
+          <li>Política de Cookies</li>
+        </ul>
+        <p>
+          Si no estuviera conforme con todas y cada una de estas cláusulas y condiciones absténgase
+          de utilizar este sitio Web.
+          <br> <br>
+          El acceso a este sitio Web no supone, en modo alguno, el inicio de una relación
+          comercial con el Titular.
+          <br> <br>
+          A través de este sitio Web, el Titular le facilita el acceso y la utilización de
+          diversos contenidos que el Titular o sus colaboradores han publicadon por medio de Internet.
+          <br> <br>
+          A tal efecto, usted está obligado y comprometido a NO utilizar cualquiera
+          de los contenidos del sitio Web con fines o efectos ilícitos, prohibidos en este Aviso
+          Legal o por la legislación vigente, lesivos de los derechos e intereses de terceros,
+          o que de cualquier forma puedan dañar, inutilizar, sobrecargar, deteriorar o impedir la
+          normal utilización de los contenidos, los equipos informáticos o los documentos, archivos y
+          toda clase de contenidos almacenados en cualquier equipo informático propios o contratados
+          por el Titular, de otros usuarios o de cualquier usuario de Internet.
+        </p>
+        <hr>
+        <h4>Medidas de seguridad</h4>
+        <p>
+          Los datos personales que facilite al Titular pueden ser almacenados en bases
+          de datos automatizadas o no, cuya titularidad corresponde en exclusiva a el Titular,
+          que asume todas las medidas de índole técnica, organizativa y de seguridad que garantizan
+          la confidencialidad, integridad y calidad de la información contenida en las mismas de
+          acuerdo con lo establecido en la normativa vigente en protección de datos.
+          <br> <br>
+          No obstante, debe ser consciente de que las medidas de seguridad de los sistemas
+          informáticos en Internet no son enteramente fiables y que, por tanto el Titular no
+          puede garantizar la inexistencia de virus u otros elementos que puedan producir alteraciones
+          en los sistemas informáticos (software y hardware) del Usuario o en sus documentos electrónicos
+          y ficheros contenidos en los mismos aunque el Titular pone todos los medios necesarios y toma las
+          medidas de seguridad oportunas para evitar la presencia de estos elementos dañinos.
+        </p>
+        <hr>
+        <h4>Datos personales</h4>
+        <p>
+          Usted puede consultar toda la información relativa al tratamiento de datos personales
+          que recoge el Titular en la página de la Política de Privacidad.
+        </p>
+        <hr>
+        <h4>Contenidos</h4>
+        <p>
+          El Titular ha obtenido la información, el contenido multimedia y
+          los materiales incluidos en el sitio Web de fuentes que considera
+          fiables, pero, si bien ha tomado todas las medidas razonables para asegurar que la información
+          contenida es correcta, el Titular no garantiza que sea exacta, completa o actualizada. El Titular declina
+          expresamente cualquier responsabilidad por error u omisión en la información contenida en las páginas de este
+          sitio Web.
+          <br> <br>
+          Queda prohibido transmitir o enviar a través del sitio Web cualquier contenido ilegal o ilícito,
+          virus informáticos, o mensajes que, en general, afecten o violen derechos de el Titular o de terceros.
+          <br> <br>
+          Los contenidos del Sitio Web tienen únicamente una finalidad informativa y bajo ninguna circunstancia deben
+          usarse ni considerarse como oferta de venta, solicitud de una oferta de compra ni recomendación para realizar
+          cualquier otra operación, salvo que así se indique expresamente.
+          <br> <br>
+          El Titular se reserva el derecho a modificar, suspender, cancelar o restringir el contenido del Sitio Web,
+          los vínculos o la información obtenida a través del sitio Web, sin necesidad de previo aviso.
+          <br> <br>
+          El Titular no es responsable de los daños y perjuicios que pudieran derivarse de la utilización
+          de la información del sitio Web o de la contenida en las redes sociales del Titular.
+        </p>
+        <hr>
+        <h4>Política de cookies</h4>
+        <p>
+          En la página Política de Cookies puede consultar toda la información relativa a la política de recogida y
+          tratamiento de las cookies.
+          <br> <br>
+          El Titular sólo obtiene y conserva la siguiente información acerca de los visitantes del Sitio Web:
+          <ul>
+            <li>El nombre de dominio del proveedor (PSI) y/o dirección IP que les da acceso a la red.</li>
+            <li>La fecha y hora de acceso al sitio Web.</li>
+            <li>La dirección de Internet origen del enlace que dirige al sitio Web.</li>
+            <li>El número de visitantes diarios de cada sección.</li>
+            <li>La información obtenida es totalmente anónima, y en ningún caso puede ser asociada a un Usuario concreto
+              e identificado.</li>
+          </ul>
+        </p>
+        <hr>
+        <h4>Enlaces de interés a otros sitios Web</h4>
+        <p>
+          El Titular puede proporcionarle acceso a sitios Web de terceros mediante enlaces con la finalidad de informar
+          sobre la existencia de otras
+          fuentes de información en Internet en las que podrá ampliar los datos ofrecidos en el sitio Web.
+          <br> <br>
+          Estos enlaces a otros sitios Web no suponen en ningún caso una sugerencia o recomendación para que usted
+          visite las páginas web de destino,
+          que están fuera del control del Titular, por lo que Titular no es responsable del contenido de los sitios web
+          vinculados ni del resultado que
+          obtenga al seguir los enlaces.
+          <br> <br>
+          Asimismo, el Titular no responde de los links o enlaces ubicados en los sitios web vinculados a los que le
+          proporciona acceso.
+          <br> <br>
+          El establecimiento del enlace no implica en ningún caso la existencia de relaciones entre Titular y el
+          propietario del sitio en el que se establezca
+          el enlace, ni la aceptación o aprobación por parte del Titular de sus contenidos o servicios.
+          <br> <br>
+          Si accede a un sitio Web externo desde un enlace que encuentre en el Sitio Web usted deberá leer la propia
+          política de privacidad del otro sitio web
+          que puede ser diferente de la de este sitio Web.
+        </p>
+        <hr>
+        <h4>Propiedad intelectual e industrial</h4>
+        <p>
+          Todos los derechos están reservados.
+          <br> <br>
+          Todo acceso a este sitio Web está sujeto a las siguientes condiciones: la reproducción, almacenaje permanente
+          y la difusión de los contenidos
+          o cualquier otro uso que tenga finalidad pública o comercial queda expresamente prohibida sin el
+          consentimiento previo expreso y por escrito de Titular.
+        </p>
+        <hr>
+        <h4>Limitación de responsabilidad</h4>
+        <p>
+          La información y servicios incluidos o disponibles a través de este sitio Web pueden incluir incorrecciones o
+          errores tipográficos. De
+          forma periódica el Titular incorpora mejoras y/o cambios a la información contenida y/o los Servicios que
+          puede introducir en cualquier
+          momento.
+          <br> <br>
+          El Titular no declara ni garantiza que los servicios o contenidos sean interrumpidos o que estén libres de
+          errores, que los defectos sean
+          corregidos, o que el servicio o el servidor que lo pone a disposición estén libres de virus u otros
+          componentes nocivos sin perjuicio de que el Titular
+          realiza todos los esfuerzos en evitar este tipo de incidentes.
+          <br> <br>
+          Titular declina cualquier responsabilidad en caso de que existan interrupciones o un mal funcionamiento de los
+          Servicios o contenidos ofrecidos en Internet,
+          cualquiera que sea su causa. Asimismo, el Titular no se hace responsable por caídas de la red, pérdidas de
+          negocio a consecuencia de
+          dichas caídas, suspensiones temporales de fluido eléctrico o cualquier otro tipo de daño indirecto que te
+          pueda ser causado por causas
+          ajenas a el Titular.
+          <br> <br>
+          Antes de tomar decisiones y/o acciones con base a la información incluida en el sitio Web, el Titular le
+          recomienda comprobar y contrastar
+          la información recibida con otras fuentes.
+        </p>
+        <hr>
+        <h4>Jurisdicción</h4>
+        <p>
+          Este Aviso Legal se rige íntegramente por la legislación española.
+          <br> <br>
+          Siempre que no haya una norma que obligue a otra cosa, para cuantas cuestiones se susciten sobre la
+          interpretación,
+          aplicación y cumplimiento de este Aviso Legal, así como de las reclamaciones que puedan derivarse de su uso,
+          las partes acuerdan
+          someterse a los Jueces y Tribunales de la provincia de Sevilla, con renuncia expresa de cualquier otra
+          jurisdicción que pudiera
+          corresponderles.
+        </p>
+        <hr>
+        <h4>Contacto</h4>
+        En caso de que usted tenga cualquier duda acerca de estas Condiciones legales o quiera realizar cualquier
+        comentario sobre este sitio Web,
+        puede enviar un mensaje de correo electrónico a la dirección <a
+          href="mailto:legal@dteil.org">legal@dteil.org</a> .
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!--##########################################################################################-->
+
+<!-- Aos first (Animation when scrolling), then jQuery (material design bootstrap), then Popper.js (material design bootstrap), then Bootstrap JS (material design bootstrap) -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+  integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+  integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function () {
+    $('body').bootstrapMaterialDesign();
+  });
+</script>
+<script>
+  var navbar = document.getElementById('nbvr');
+  var logo = document.getElementById('logo')
+  window.onscroll = function () {
+    if (window.pageYOffset > 1) {
+      navbar.style.background = "transparent";
+      logo.style.width = "50px";
+    } else {
+      navbar.style.background = "transparent";
+      logo.style.width = "100px";
+    }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS(
+    "particles-js", {
+      "particles": {
+        "number": {
+          "value": 25,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ff9900"
+        },
+        "shape": {
+          "type": "polygon",
+          "stroke": {
+            "width": 0,
+            "color": "#ff9900"
+          },
+          "polygon": {
+            "nb_sides": 4
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 300,
+          "color": "#ff9900",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "bubble"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 200,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 200,
+            "size": 10,
+            "duration": 1,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    }
+  );
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="src/contact.js"></script>
+
+</html>
