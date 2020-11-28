@@ -40,13 +40,13 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarLinks">
       <ul class="navbar-nav">
         <li class="nav-item text-right" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#Steps"><strong class="bold">Trazabilidad</strong></a>
+          <a class="nav-link" href="#Step1"><strong class="bold">Trade</strong></a>
         </li>
         <li class="nav-item text-right" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#Contact"><strong class="bold">Puntúa</strong></a>
+          <a class="nav-link" href="#Step2"><strong class="bold">Judge</strong></a>
         </li>
         <li class="nav-item text-right" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#People"><strong class="bold">Participantes</strong></a>
+          <a class="nav-link" href="#Step3"><strong class="bold">Oracle</strong></a>
         </li>
       </ul>
     </div>
@@ -79,17 +79,12 @@
   <main class="full" id="Home">
     <div class="container-fluid">
       <div class="row half-full justify-content-start align-items-center">
-        <h1 class="col-8 text-center" id="nLote">Biptions<span class="typing">&nbsp;</span></h1>
+        <h1 class="col-8 text-center" id="nLote">Biptions <em> (Alpha Version)</em><span class="typing">&nbsp;</span></h1>
       </div>
-      <!-- <div class="row half-full justify-content-end">
-        <div class="stamp col-5 align-self-center">
-          <img class="backgroundandradius" src="src/assets/Guaranteed.svg" width="70%" alt="Sello de garantía">
-        </div>
-      </div> -->
     </div>
   </main>
   <!--##########################################################################################-->
-<!-- User Login                                 Reparar id sin que se vuelva transparente el fondo -->
+<!-- User Login -->
 <section class="full" id="Contact">
   <div class="container-fluid Contact">
     <div class="container col-md-10 mb-5 mx-auto mt-0 mx-2 px-3 py-4 bg2-custom">
@@ -203,6 +198,7 @@
             <input id="SendButton" type="submit" class="btn btn-primary disabled" tabindex="0" value="Enviar">
           </div>
         </div>
+
         <!-- Upload file -->
         <!-- <div class="row justify-content-center aos-repair">
           <div id="SendButtonDiv" class="mx-auto button-send" data-aos="flip-down">
@@ -228,7 +224,7 @@
 <!--##########################################################################################-->
   <!--Second slide(Steps)-->
 
-  <div class="centerall" id="Steps">
+  <div class="centerall" >
     <div class="container">
       <div class="row">
         <div class="col-sm-12 aos-repair">
@@ -237,7 +233,7 @@
             
           <!-- General -->
             <!-- Tab_1 Traders. Wallet: BTC-->
-            <div class="mt-5 pt-5 timeline" data-aos="fade-right">
+            <div class="mt-5 pt-5 timeline" data-aos="fade-right" id="Step1">
               <div class="timeline-content text-center">
                 <h3 class="title text-center">Trade<br>1,0234 BTC => 0 lock</h3>
                 <img class="img-fluid center-img" src="src/assets/Icon1_Trade.svg" alt="Origen"
@@ -248,10 +244,9 @@
                   <div class="card">
 
                     <!-- Card_1.1 To Protect (Alice = Local)-->
-                                                                                                            <!-- BTCaddressTrader1 -->
-                                                                                                            <!-- Conditions/Respuestas: Del trader2 al trader1 -->
-                                                                                                              <!-- CALL/PUT -->
-                                                                                                              <!-- Strike (10% quantity en 10 tramos) -->
+                                                                            <!-- BTCaddressTrader1 -->
+                                                                            <!-- Conditions/Respuestas: Del trader2 al trader1 -->
+                                                                            <!-- Strike (10% quantity en 10 tramos) -->
                 <div id="accordionEnvasado">
                   <div class="card">
                     <div class="card-header" id="headerEnvasado">
@@ -898,8 +893,7 @@
               <!-- ⇐ Dev_BTC ⇒  -->
               <!-- ⇐ Dev_IPFS ⇒  -->
               <!-- ⇐ Dev_API ⇒  -->
-            <!-- Procesado -->
-            <div class="timeline" data-aos="fade-left">
+            <div class="timeline" data-aos="fade-left" id="Step2">
               <div class="timeline-content text-center">
                 <h3 class="title text-center">JUDGE<br>150 voteBTC => 0 stake</h3>
                 <img class="img-fluid center-img" src="src/assets/Icon2_Judge.svg"
@@ -1148,13 +1142,10 @@
             </div>
 
             <!-- Tab_3 Oracle. Wallet: repuBTC-->
-            <!-- Card_2.1 USD-BTC -->
-                                                                                                      <!-- Date -->
-                                                                                                      <!-- Hour -->
-                                                                                                      <!-- ADD REPU 	(btn) -->
-            <div class="timeline" data-aos="fade-right">
+
+            <div class="timeline" data-aos="fade-right" id="Step3">
               <div class="timeline-content text-center">
-                <h3 class="text-center title">ORACLE: 13.250 repuBTC => 0 spent</h3>
+                <h3 class="text-center title">ORACLE<br>13.250 repuBTC => 0 spent</h3>
                 <img class="img-fluid center-img" src="src/assets/Icon3_Oracle.svg" alt="Envasado"
                   width="150">
 
@@ -1162,6 +1153,7 @@
 
                 <br>
 
+                <!-- Card_2.1 USD-BTC -->
                 <div id="accordionEnvasado6">
                   <div class="card">
                     <div class="card-header" id="headerEnvasado6">
@@ -1194,71 +1186,71 @@
                             Table of Comments
                           </small>
                         </ul>
+
                         <ul>
                           <!-- <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> -->
-                            <table id="dtDynamicVerticalScrollExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-                              <thead>
-                                <tr>
-                                  <th>
-                                    <!-- Default unchecked -->
-                                    <div class="custom-control custom-checkbox">
-                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck1" Checked>
-                                      <label class="custom-control-label" for="tableDefaultCheck1"></label>
-                                    </div>
-                                  </th>
-                                  <th class="th-sm">Date</th>
-                                  <th class="th-sm">nº options</th>
-                                  <th class="th-sm">nº oracles </th>
+                          <table id="dtDynamicVerticalScrollExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <!-- Default unchecked -->
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck1" Checked>
+                                    <label class="custom-control-label" for="tableDefaultCheck1"></label>
+                                  </div>
+                                </th>
+                                <th class="th-sm">Date</th>
+                                <th class="th-sm">nº options</th>
+                                <th class="th-sm">nº oracles </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">
+                                  <!-- Default unchecked -->
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                                    <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                                  </div>
+                                </th>
+                                <td>27/11/20</td>
+                                <td>4</td>
+                                <td>-100</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">
+                                  <!-- Default unchecked -->
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck3" >
+                                    <label class="custom-control-label" for="tableDefaultCheck3"></label>
+                                  </div>
+                                </th>
+                                <td>20/11/20</td>
+                                <td>3</td>
+                                <td>-25</td>
                                 </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">
-                                    <!-- Default unchecked -->
-                                    <div class="custom-control custom-checkbox">
-                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
-                                      <label class="custom-control-label" for="tableDefaultCheck2"></label>
-                                    </div>
-                                  </th>
-                                  <td>27/11/20</td>
-                                  <td>4</td>
-                                  <td>-100</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">
-                                    <!-- Default unchecked -->
-                                    <div class="custom-control custom-checkbox">
-                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck3" >
-                                      <label class="custom-control-label" for="tableDefaultCheck3"></label>
-                                    </div>
-                                  </th>
-                                  <td>20/11/20</td>
-                                  <td>3</td>
-                                  <td>-25</td>
-                                 </tr>
-                                <tr>
-                                  <th scope="row">
-                                    <!-- Default unchecked -->
-                                    <div class="custom-control custom-checkbox">
-                                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4" >
-                                      <label class="custom-control-label" for="tableDefaultCheck4"></label>
-                                    </div>
-                                  </th>
-                                  <td>13/11/20</td>
-                                  <td>12</td>
-                                  <td>+35</td>
-                                </tr>
-                                
-                              </tbody>
-                            </table>
+                              <tr>
+                                <th scope="row">
+                                  <!-- Default unchecked -->
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4" >
+                                    <label class="custom-control-label" for="tableDefaultCheck4"></label>
+                                  </div>
+                                </th>
+                                <td>13/11/20</td>
+                                <td>12</td>
+                                <td>+35</td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
                         </ul>
                         <ul>
                           <!-- Price: BTC-USD -->
 
                             <form id="contact-form" method="post" role="form" enctype="text/plain">
                               <div class="messages"></div>
-                
-                              
+
                               <div class="controls">
                                 <div class="row justify-content-center aos-repair">
                                   <div class="col-sm-12" data-aos="fade-down-right">
@@ -1316,51 +1308,16 @@
                   </div>
                 </div>
 
-                <br>
-
                 <!-- <small>Estos datos provienen de la<br><a id="cidEnvasado"
                     href="https://ipfs.io/ipfs/QmWfTVJsYNNzJEU2PnqzcU7MwtU7YKzNE8jsXboTKSdKyh">
                     Blockchain <i class="fas fa-search"></i></a></small> -->
-
-                <br>
+                                                                                                                    <!-- RECORD REGISTER SPACE -->
+                                                                                                                    <!-- JSON FORMATTER -->
+                                                                                                                    <!-- PAST -->
+                                                                                                                    <!-- FUTURE -->
+                                                                                                                    <!-- TUTORIAL -->
               </div>
             </div>
-
-            <!-- Puntuación -->
-            <!-- <div class="timeline mb-5 pb-5" data-aos="fade-left">
-              <div class="timeline-content text-center">
-                <h3 class="title text-center">Valoraciones</h3>
-                <img class="img-fluid center-img" src="src/assets/dTeilorg_Explorador_Iconos_podium.svg"
-                  alt="Valoraciones" width="250">
-                <br>
-                <div>
-                  <p class="bold">Puntuación del público :</p>
-                </div>
-                <div>
-                  <span id="1star" class="fa fa-star checked"></span>
-                  <span id="2star" class="fa fa-star checked"></span>
-                  <span id="3star" class="fa fa-star checked"></span>
-                  <span id="4star" class="fa fa-star checked"></span>
-                  <span id="5star" class="fa fa-star checked"></span>
-                </div>
-                <div>
-                  <p>
-                    Han votado
-                    <span id="numeroVotantes">2</span>
-                    personas
-                  </p>
-                </div>
-
-                <br>
-                <p id="premios"><span class="bold">Premios conseguidos:</span></p>
-                <p id="premio1">DIPLOMA XII Concurso Provincial Aceite de Oliva Virgen Extra 2019, «Finalista en la
-                  categoría de Frutado Verde».</p>
-                <img id="imgDO" class="img-fluid center-img" src="src/assets/DO.png" alt="D.O." width="250">
-
-                <small>Estos datos provienen de la<br><a id="cidValoraciones" href="https://ipfs.io/ipfs/"> Blockchain <i class="fas fa-search"></i></a></small>
-
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -1368,11 +1325,6 @@
   </div>
   </div>
   <!--##########################################################################################-->
-
-
-
-
-
   <!--Third slide(Contact)-->
   <div class="full centerall" id="Contact">
       <div class="container col-sm-10 mt-5 mx-2 px-3 py-4 bg2-custom">
@@ -1387,7 +1339,7 @@
 
           <div class="controls">
             <div class="row justify-content-center aos-repair">
-              <div class="col-sm-6" data-aos="fade-down-left">
+              <div class="col-sm-8" data-aos="fade-down-left">
                 <div class="form-group">
                   <label for="form_email" class="bmd-label-floating col-sm-6 label-form">Email</label>
                   <input id="form_email" type="email" name="Email" class="form-control form-control-lg"
@@ -1400,7 +1352,7 @@
           <div class="clearfix"></div>
 
           <div class="row justify-content-center aos-repair">
-            <div class="col-sm-6 my-3" data-aos="fade-up">
+            <div class="col-sm-8 my-3" data-aos="fade-up">
               <div class="form-group">
                 <label for="form_message" class="bmd-label-floating col-sm-12 label-form">Comment</label>
                 <textarea id="form_message" class="form-control form-control-lg" name="Message" rows="1"
@@ -1440,6 +1392,7 @@
                 id="sendValoracion">
             </div>
           </div>
+                                                                                                        <!-- Añadir Donaciones -->
         </form>
       </div>
   </div>
@@ -1455,7 +1408,7 @@
           <img src="src/assets/CEO.png" class="photo img-fluid" alt="CEO" width="150">
         </div>
         <div class="overlay">
-          <div class="text">Víctor Gil Cifuentes</div>
+          <div class="text">Víctor Gil</div>
         </div>
       </div>
       <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-up">
@@ -1487,7 +1440,7 @@
           <img src="src/assets/Aitor.jpg" class="photo img-fluid" alt="Advisor" width="150">
         </div>
         <div class="overlay">
-          <div class="text">Aitor Ibañez</div>
+          <div class="text">Aitor Ibáñez</div>
         </div>
       </div>
     </div>
